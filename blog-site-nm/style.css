@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+.card-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-shadow:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+#ev-news-bar {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #242038;
+    color: #ff8000;
+    padding: 10px 0;
+    border-top: 2px solid #9067c6;
+    border-bottom: 2px solid #9067c6;
+  }
+  
+  #ev-news-bar h3 {
+    margin: 0 15px;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  
+  #ev-news-scroll {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 35s linear infinite;
+  }
+  
+  #ev-news-scroll a {
+    display: inline-block;
+    color: #ff0000;
+    text-decoration: none;
+    margin-right: 40px;
+  }
+  
+  #ev-news-scroll a:hover {
+    color: #ffffff;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
